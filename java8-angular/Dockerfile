@@ -31,6 +31,12 @@ RUN apt-get update && \
     apt-get install -y git && \
     apt-get clean;
 
+EXPOSE 80
+EXPOSE 8080
+EXPOSE 3000
+EXPOSE 4000
+EXPOSE 4200
+
 RUN useradd -m developer
 USER developer
 RUN echo $HOME
