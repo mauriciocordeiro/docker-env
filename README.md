@@ -32,3 +32,7 @@ Building a container mounting a host directory:
 ### Running container
 
 `docker start <container_name>`
+
+### Coding
+
+It's possible to open any container directory with [Visual Studio Code Remote Development](https://github.com/Microsoft/vscode-remote-release).
