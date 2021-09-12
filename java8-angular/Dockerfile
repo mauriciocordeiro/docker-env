@@ -8,6 +8,10 @@ RUN apt-get update && \
     apt-get install -y ant && \
     apt-get install -y maven && \
     apt-get clean;
+
+# Install OpenJDK-11 for VSCode Java plugins
+RUN apt-get install -y openjdk-11-jdk && \
+    apt-get clean;
     
 # Fix certificate issues
 RUN apt-get update && \
